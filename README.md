@@ -1,75 +1,7 @@
 # TetraStep
 
 Proyecto React + Vite + TypeScript + TailwindCSS.
-
-Instalación (PowerShell):
-
-```powershell
-# Instala dependencias definidas en package.json
-npm install
-
-# Ejecuta el servidor de desarrollo (Vite)
-npm run dev
-
-# Para construir la app para producción
-npm run build
-
-# Para previsualizar la build localmente
-npm run preview
-```
-
-Archivos principales añadidos:
-
-- `vite.config.ts` - configuración de Vite
-- `tsconfig.json`, `tsconfig.node.json` - TypeScript
-- `postcss.config.cjs`, `tailwind.config.cjs` - Tailwind/PostCSS
-- `index.html` - entrada HTML
-- `src/main.tsx` - punto de arranque que monta `src/App.tsx`
-
-Siguientes pasos: ejecutar `npm install` para descargar dependencias.
-
-## Despliegue en Vercel (paso a paso)
-
-Hay dos maneras comunes de desplegar: usando el panel web de Vercel (Dashboard) o la CLI. A continuación están ambos métodos.
-
-1) Despliegue usando Vercel Dashboard (recomendado para la mayoría)
-
-- Ve a https://vercel.com y crea una cuenta o inicia sesión.
-- Haz clic en "New Project" → "Import Git Repository" y concede acceso a tu repositorio (GitHub/GitLab/Bitbucket).
-- Selecciona el repositorio que contiene este proyecto.
-- En la pantalla de configuración del proyecto, confirma las siguientes opciones:
-	- Framework Preset: "Other" o "Vite" (si aparece). En Vercel, Vite suele detectarse automáticamente.
-	- Build Command: `npm run build`
-	- Output Directory: `dist`
-	- Install Command: `npm install`
-
-- (Opcional) Si usas variables de entorno, en la sección "Environment Variables" añade cada clave/valor para `Production`, `Preview`, y `Development` según corresponda.
-
-- Haz clic en "Deploy". Vercel ejecutará la build y publicará la app. Al finalizar tendrás una URL temporal `https://<project>.vercel.app`.
-
-Notas: En este proyecto hay un archivo `vercel.json` que fuerza `@vercel/static-build` y `dist` como directorio de salida. Vercel detecta el comando `npm run build` y la carpeta `dist` por la configuración de Vite.
-
-2) Despliegue usando Vercel CLI (útil para integración local / deploys desde terminal)
-
-- Instala Vercel CLI (si aún no está instalado):
-
-```powershell
-npm i -g vercel
-```
-
-- Inicia sesión desde la CLI:
-
-```powershell
-vercel login
-```
-
-- Desde la raíz del proyecto (donde está `package.json`) ejecuta:
-
-```powershell
-vercel --prod
-```
-
-- La primera vez te pedirá algunas opciones (nombre del proyecto, scope, si quieres vincular al repo). Responde según prefieras (puedes aceptar los valores por defecto si ya hiciste el setup en el Dashboard).
+el proyecto, scope, si quieres vincular al repo). Responde según prefieras (puedes aceptar los valores por defecto si ya hiciste el setup en el Dashboard).
 
 3) Ajustes importantes y debugging
 
