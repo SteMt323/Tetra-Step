@@ -35,7 +35,7 @@ export function Footer() {
               </div>
               <div>
                 <h3 className="text-white text-xl">TetraStep</h3>
-                <p className="text-green-400 text-sm">Innovación que deja huella verde</p>
+                <p className="text-green-400 text-sm">Innovación que deja huella verde.</p>
               </div>
             </motion.div>
             <p className="text-white/70 max-w-md mb-4">
